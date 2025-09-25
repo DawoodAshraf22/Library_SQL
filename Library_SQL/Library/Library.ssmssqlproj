@@ -3,7 +3,7 @@
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="DAWOOD:DAWOOD\dawoo">
+        <ConnectionNode Name="DAWOOD:DESKTOP-2CL3CIR\Dawoo">
           <Created>2025-09-12T00:01:06.0146526+05:00</Created>
           <Type>SQL</Type>
           <Server>DAWOOD</Server>
@@ -18,15 +18,66 @@
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
           <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
         </ConnectionNode>
+        <ConnectionNode Name="DESKTOP-2CL3CIR:DESKTOP-2CL3CIR\Dawoo">
+          <Created>2025-09-25T15:58:13.5114846+05:00</Created>
+          <Type>SQL</Type>
+          <Server>DESKTOP-2CL3CIR</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <TrustServerCertificate>True</TrustServerCertificate>
+          <HostNameInServerCertificate />
+          <EncryptionOption>True</EncryptionOption>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName />
+        </ConnectionNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
         <FileNode Name="DB_Scripts.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DAWOOD:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>DAWOOD</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-2CL3CIR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-2CL3CIR</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>DB_Scripts.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SPBookIssues.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-2CL3CIR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-2CL3CIR</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SPBookIssues.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SPBooks.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-2CL3CIR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-2CL3CIR</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SPBooks.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SPFines.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-2CL3CIR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-2CL3CIR</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SPFines.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SPGenre.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-2CL3CIR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-2CL3CIR</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SPGenre.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SPLogin.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-2CL3CIR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-2CL3CIR</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SPLogin.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SPUser.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-2CL3CIR:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-2CL3CIR</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SPUser.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
