@@ -1,5 +1,9 @@
 USE [Library]
 GO
+
+INSERT INTO users (fullname,email,username,password,usertype,isactive)
+VALUES('Admin','Admin@gmail.com','Admin','Admin@123','Admin',1)
+
 INSERT INTO genre (genrename, description) VALUES
 ('Fiction', 'Imaginative literature including novels and short stories'),
 ('Science Fiction', 'Futuristic, scientific, and technological themes'),

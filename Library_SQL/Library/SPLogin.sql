@@ -16,9 +16,33 @@ CREATE OR ALTER PROC [dbo].[SPLogin]
 AS 
 BEGIN 
 
-	IF @Action = 0 
+	IF @Action = 21 --REGISTER 1 
 	BEGIN 
-		SELECT * FROM users 
+		INSERT INTO users (fullname,email,username,password,usertype,isactive)
+		VALUES(@fullname,@email,@username,@password,@usertype,0)
+
+		SET @Output = 'REGISTER inserted successfully';
 	END 
+	ELSE IF @Action = 22 --Login 2 
+	BEGIN 
+		SELECT *
+		FROM users
+		WHERE email = @email AND password = @password
+	END
+	ELSE IF @Action = 23 --forget pass 
+	BEGIN 
+		SELECT *
+		FROM users
+		WHERE email = @email 
+	END
+	ELSE IF @Action = 24 
+	BEGIN 
+		UPDATE users --Reset pass 
+		SET
+		password = coalesce(@password,password)
+		WHERE Userid = @ID
+
+		SET @Output = 'users updated successfully';
+	END
 
 END 

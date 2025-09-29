@@ -29,7 +29,7 @@ BEGIN
 		INSERT INTO users (fullname,email,username,password,usertype,isactive)
 		VALUES(@fullname,@email,@username,@password,@usertype,0)
 
-		SET @Output = 'Genre inserted successfully';
+		SET @Output = 'users inserted successfully';
 	END 
 	ELSE IF @Action = 3 
 	BEGIN 
@@ -42,7 +42,7 @@ BEGIN
 		isactive = coalesce(@isactive,isactive)
 		WHERE Userid = @ID
 
-		SET @Output = 'Genre updated successfully';
+		SET @Output = 'users updated successfully';
 	END 
 	ELSE IF @Action = 4
 	BEGIN 
@@ -51,7 +51,7 @@ BEGIN
 		isactive = 0
 		WHERE Userid = @ID
 
-		SET @Output = 'Genre deleted successfully';
+		SET @Output = 'users deleted successfully';
 	END 
 
 END 
