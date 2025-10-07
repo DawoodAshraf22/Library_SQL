@@ -46,6 +46,12 @@
           <AssociatedConnUserName />
           <FullPath>SPBooks.sql</FullPath>
         </FileNode>
+        <FileNode Name="SPDashboard.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DAWOOD:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DAWOOD</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SPDashboard.sql</FullPath>
+        </FileNode>
         <FileNode Name="SPFines.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DAWOOD:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DAWOOD</AssociatedConnSrvName>

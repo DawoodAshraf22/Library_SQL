@@ -25,22 +25,25 @@ BEGIN
 	END 
 	ELSE IF @Action = 22 --Login 2 
 	BEGIN 
-		SELECT *
+		SELECT *, 'https://static.vecteezy.com/system/resources/previews/002/002/403/non_2x/man-with-beard-avatar-character-isolated-icon-free-vector.jpg' as [ProfilePic]
 		FROM users
 		WHERE email = @email AND password = @password
 	END
 	ELSE IF @Action = 23 --forget pass 
 	BEGIN 
-		SELECT *
+		if exists (SELECT *
 		FROM users
-		WHERE email = @email 
+		WHERE email = @email)
+		BEGIN
+		SET @Output = 'Reset password';
+		END
 	END
 	ELSE IF @Action = 24 
 	BEGIN 
 		UPDATE users --Reset pass 
 		SET
 		password = coalesce(@password,password)
-		WHERE Userid = @ID
+		WHERE   email = @email
 
 		SET @Output = 'users updated successfully';
 	END
